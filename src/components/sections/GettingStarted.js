@@ -4,6 +4,7 @@ import './GettingStarted.css'
 import logo_altered from '../assets/logo_altered.svg'
 import { Container } from '../layouts/Container'
 import { LoremIpsum } from 'react-lorem-ipsum'
+import Flip from 'react-reveal/Flip';
 
 const sliderSettings = {
     dots: true,
@@ -21,7 +22,7 @@ export const GettingStarted = () => {
             <h2>Getting Started</h2>
             <Slider {...sliderSettings} className="grid">
                 <div className="card">
-                    <p className="step-number">1</p>
+                    <Flip><p className="step-number">1</p></Flip>
                     <div className="text-wrapper">
                         <LoremIpsum p={1} avgSentencesPerParagraph={1} avgWordsPerSentence={5} />
                     </div>

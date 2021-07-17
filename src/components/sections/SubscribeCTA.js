@@ -4,10 +4,12 @@ import { Container } from '../layouts/Container'
 import { Button } from '../elements/Button'
 import { LoremIpsum } from 'react-lorem-ipsum'
 import { RiMailSendFill } from 'react-icons/ri'
+import Jump from 'react-reveal/Jump';
 
 export const SubscribeCTA = () => {
     return (
         <Container className="SubscribeCTA">
+        <Jump>
             <div className="grid">
                 <RiMailSendFill className="icon" />
                 <div className="text-wrapper">
@@ -18,6 +20,7 @@ export const SubscribeCTA = () => {
                     <Button type="outline__large">Subscribe</Button>  
                 </form>  
             </div>
+        </Jump>    
         </Container>
     )
 }

@@ -152,7 +152,7 @@
         flex-direction: row;
         width: 100%;
         max-width: 1000px;
-        z-index: 0;
+        z-index: 3;
     }
 
     .NavBrand {
