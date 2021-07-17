@@ -1,0 +1,88 @@
+:root {
+  --main-color: #B3F1D7;
+  --link-color: #26CF83;
+  --accent-color: #267AA9; 
+  --accent-light-color: #65B1DC;
+  --dark-accent-color: #1B5779;
+  --white: #f3f3f3;
+  --dark: #202121;
+  --darkest: #1B1C1C;
+  --grey: #2D302F;
+  --lightgrey: #A8B5AF;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Remove default padding and margin */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--main-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin: 24px auto;
+  color: var(--white)
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+h3 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-family: 'Roboto Slab', serif;
+  transition: color 0.2s linear;
+}
+
+a:hover {
+  color: var(--white)
+}
+
+ul {
+  list-style-type: none;
+}
+
+.flex-row-centered {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}

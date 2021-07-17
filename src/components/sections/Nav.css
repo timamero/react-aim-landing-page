@@ -1,0 +1,235 @@
+.nav-wrapper {
+    position: relative;
+}
+
+.Nav {
+    position: fixed;
+    top: 0px;
+    height: 80px;
+    z-index: 2;
+    background-color: var(--dark);
+}
+
+.Nav a {
+    transition: border-bottom 0.2s ease-out;
+}
+
+.Nav a:hover:not(.NavBrand) {
+    border-bottom: 2px solid var(--lightgrey);
+}
+
+.Nav a:active:not(.NavBrand) {
+    border-bottom: 2px solid var(--accent-color);
+    color: var(--white)
+}
+
+.NavBrand {
+    margin-left: 16px;
+    margin-top: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+}
+
+.NavBrand p {
+    margin-left: 8px;
+}
+
+.NavBrand:hover {
+    color: var(--white);
+}
+
+.nav-menu-icon {
+    margin-right: 16px;
+    margin-top: 8px;
+    position: absolute;
+    top: 0;
+    left: 85vw;
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: var(--link-color) !important;
+    opacity: 1;
+    transition: color 0.5s ease-out;
+    z-index: 1;
+}
+
+.nav-menu-icon:hover {
+    color: var(--white) !important;
+}
+
+.hide-nav-menu-icon {
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    z-index: -1;
+}
+
+.nav-menus {
+    margin: 8px;
+    padding-left: 16px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    height: 37.5rem;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    background: linear-gradient(180deg, rgba(32,33,33,1) 22%, rgba(45,48,47,1) 57%);
+    transition: all 0.5s ease-out;
+}
+
+.nav-menus li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.hide-nav-menus {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.dropdown-menu-label {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: color 0.2s ease-out;
+    font-family: 'Roboto Slab', serif;
+    color: var(--link-color)
+}
+
+.dropdown-menu-arrow {
+    margin-left: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.dropdown-menu-label:hover {
+    color: var(--white);
+}
+
+.dropdown-menu-label:active .dropdown-menu-arrow{
+    transform: translate(0,4px);
+}
+
+.Dropdown {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.6s ease-out;
+}
+
+.show-dropdown {
+    max-height: 40rem;
+}
+
+.Dropdown li {
+    margin-left: 16px;
+    font-size: 1.25rem;
+}
+
+.Nav .Button {
+    margin: 8px;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+    .nav-menus {
+        left: 90vw;
+        width: 300px;
+        transform: translate(-100%, 0);
+    }
+    .nav-menu-icon {
+        left: 90vw;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .Nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 1000px;
+        z-index: 0;
+    }
+
+    .NavBrand {
+        position: relative;
+    }
+
+    .NavMenuItems {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .MenuItem {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .NavMenuItemsWithDropdown {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Dropdown {
+        /* display: none; */
+        padding: 8px;
+        width: max-content;
+        max-height: none;
+        height: 0;
+        position: absolute;
+        top: 32px;
+        right: 2rem;
+        border: 1px solid var(--grey);
+        border-radius: 0.5rem;
+        box-shadow: 1px 8px 10px -8px black;
+        background-color: var(--dark);
+        opacity: 0;
+        z-index: 2;
+    }
+
+    .Dropdown li {
+        margin-left: 0;
+        font-size: 0.8rem;
+    }
+
+    .nav-menu-icon {
+        display: none;
+    }
+
+    .nav-menus {
+        opacity: 1;
+        width: 100%;
+        height: auto;
+        position: relative;
+        top:auto;
+        left: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        overflow: visible;
+        background: none;
+        font-size: 0.85rem;
+        transition: none;
+    }
+
+    .dropdown-menu-label {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .dropdown-menu-item {
+        position: relative;
+    }
+
+    .show-dropdown {
+        max-height: none;
+        height: auto;
+        opacity: 1;
+        transition: opacity 0.3s ease-out;
+    }
+}

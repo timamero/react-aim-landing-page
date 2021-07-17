@@ -1,0 +1,47 @@
+.SignUpCTA {
+    margin-top: 150px;
+}
+
+.SignUpCTA .grid {
+    margin-top: 40px;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    border: 1px solid var(--white);
+    border-radius: 1rem;
+}
+
+.signup-content-container {
+    margin: 40px auto 24px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.SignUpCTA .text-wrapper {
+    height: max-content;
+    width: 100%;
+    max-width: 450px;
+    padding: 8px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.SignUpCTA .btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.SignUpCTA Button {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 24px;
+}
