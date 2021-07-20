@@ -6,7 +6,7 @@ import income from '../assets/income.svg'
 import { Container } from '../layouts/Container'
 import { Button } from '../elements/Button'
 import { LoremIpsum } from 'react-lorem-ipsum'
-import Roll from 'react-reveal/Roll';
+import Zoom from 'react-reveal/Zoom';
 
 export const Features = () => {
     return (
@@ -16,7 +16,7 @@ export const Features = () => {
             bgcolor="#202121">
             <h2>Features</h2>
             <div className="grid">
-                <Roll>
+                <Zoom>
                     <div className="card">
                         <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
                         <div className="large-text">
@@ -27,8 +27,8 @@ export const Features = () => {
                             <Button type="outline__large">View Documentation</Button>
                         </div>   
                     </div>
-                </Roll>
-                <Roll>
+                </Zoom>
+                <Zoom>
                     <div className="card">
                         <h3>Lorem ipsum dolor sit.</h3>
                         <div className="large-text">
@@ -39,8 +39,8 @@ export const Features = () => {
                             <Button type="outline__large">View Documentation</Button>
                         </div>
                     </div>
-                </Roll>
-                <Roll>
+                </Zoom>
+                <Zoom>
                     <div className="card">
                         <h3>Lorem ipsum dolor sit amet.</h3>
                         <div className="large-text">
@@ -51,7 +51,7 @@ export const Features = () => {
                             <Button type="outline__large">View Documentation</Button>
                         </div>
                     </div>
-                </Roll>
+                </Zoom>
             </div>
         </Container>
     )
