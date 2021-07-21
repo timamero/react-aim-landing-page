@@ -78,6 +78,7 @@
     .hero-content-container img {
         display: inline-block;
         height: 75vh;
+        max-height: 480px;
     }
 
     .hero-content-container Button {
