@@ -61,6 +61,7 @@
     .hero-content-container img {
         display: inline-block;
         height: 50vh;
+        max-height: 320px;
     }
 
     .Hero .btn-container {
